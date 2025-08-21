@@ -14,7 +14,7 @@ export default function Projects() {
                         <>
                             <h2 className="project-title">{project.title}</h2>
                             <ul className="project-item" key={index}>
-                                <li className="project-description">{project.description}</li>
+                                <li key={`list-${index}`} className="project-description">{project.description}</li>
                             </ul>
                         </>
                     ))

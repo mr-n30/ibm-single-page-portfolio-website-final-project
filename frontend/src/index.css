@@ -76,3 +76,31 @@ nav ul {
 .project-item {
   @apply border-b-2 pb-5 w-full border-gray-200;
 }
+
+.project-item:last-child {
+  @apply border-b-0;
+}
+
+.recommendation-item-container {
+  @apply grid grid-cols-3 gap-5;
+}
+
+.recommendation-item {
+  @apply border-2 text-center p-5 rounded-xl shadow-xl h-[250px];
+}
+
+.recommendations-title {
+  @apply w-full ;
+}
+
+.recommendations {
+  @apply flex flex-col justify-center items-center;
+}
+
+.comment-by {
+  @apply mb-3 underline underline-offset-8 decoration-gray-500/50;
+}
+
+.recommendation-fieldset {
+  @apply flex flex-col border-2;
+}

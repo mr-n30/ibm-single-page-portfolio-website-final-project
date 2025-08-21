@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+* {
+  @apply p-0 m-0 box-border;
+}
+
+html,
+body,
+#root {
+  @apply h-full w-full;
+}
+
+#root {
+  @apply flex flex-col;
+}
+
+nav {
+  @apply border-b-2 shadow-xl bg-purple-800 text-white p-5 flex justify-between items-center;
+}
+
+nav ul {
+  @apply flex flex-row gap-x-[30px] font-bold;
+}
+
+.user-info {
+  @apply flex flex-row gap-[50px] p-5;
+}
+
+.intro-text-container {
+  @apply flex flex-col items-center justify-center text-left gap-5;
+}
+
+.intro-text {
+  @apply w-full;
+}
+
+.profile-photo {
+  @apply w-[150px] h-[150px] rounded-full border-2 border-purple-800;
+}
+
+.skills {
+  @apply p-5;
+}
+
+.skills-title,
+.projects-title,
+.recommendations-title {
+  @apply text-3xl font-bold text-purple-800 mb-5;
+}
+
+.skills-list-container {
+  @apply grid grid-cols-4 gap-y-[50px] gap-x-[30px];
+}
+
+.skill-item {
+  @apply flex flex-col items-center justify-center text-center p-5 border-2 border-purple-800 rounded-lg shadow-xl;
+}
+
+.recommendations,
+.projects {
+  @apply p-5;
+}
+
+.project-description {
+  @apply text-sm text-gray-600 list-inside list-disc;
+}
+
+.projects-list-container {
+  @apply flex flex-col justify-between gap-3 items-start pl-[30px];
+}
+
+.project-title {
+  @apply text-xl font-semibold;
+}
+
+.project-item {
+  @apply border-b-2 pb-5 w-full border-gray-200;
+}

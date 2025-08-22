@@ -12,6 +12,7 @@ export default function Recommendations() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        alert("Recommendation submitted successfully!");
         setUsername(e.target.username.value);
         setTextarea(e.target.recommendation.value);
         setRecommendations((prev) => {

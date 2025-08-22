@@ -7,7 +7,7 @@ export default function Recommendations() {
         (<article className="recommendation-item">
             <h1 className='comment-by'>Comment by: Winston Scott</h1>
             <p className="recommendation-text">"John is a dedicated and skilled developer who consistently delivers high-quality work. His attention to detail and problem-solving skills are exceptional."</p>
-        </article>)
+        </article>),
     ]);
 
     const handleSubmit = (e) => {
@@ -33,9 +33,9 @@ export default function Recommendations() {
             <form className='recommendation-form' onSubmit={handleSubmit}>
                 <fieldset className='recommendation-fieldset'>
                     <legend>Leave a Recommendation</legend>
-                    <input required type="text" name="username" placeholder="Name" className="recommendation-name" onChange={e => setUsername(e.target.value)} />
-                    <textarea required placeholder="Message..." className="recommendation-text" name="recommendation" onChange={e => setTextarea(e.target.value)}></textarea>
-                    <button type="submit" className="recommendation-submit">Submit</button>
+                    <input required maxlength={24} type="text" name="username" placeholder="Name" className="recommendation-name" onChange={e => setUsername(e.target.value)} />
+                    <textarea required maxLength={1024} placeholder="Message..." className="recommendation-textarea" name="recommendation" onChange={e => setTextarea(e.target.value)}></textarea>
+                    <button type="submit" className="recommendation-button">Submit</button>
                 </fieldset>
             </form>
         </section>

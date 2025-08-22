@@ -2,7 +2,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className="user-info">
-                <p className="name">John Doe</p>
+                <p className="name">John Wick</p>
                 <p className="email">test@example.com</p>
                 <p className="phone">123-456-7890</p>
             </div>

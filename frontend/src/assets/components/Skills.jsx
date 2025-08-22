@@ -1,6 +1,6 @@
 export default function Skills() {
     const skills = [
-        { "img": "./assets/images/html.png", "name": "HTML", "years": "2 years" },
+        { "img": "assets/images/react.png", "name": "HTML", "years": "2 years" },
         { "img": "./assets/images/js.png", "name": "JavaScript", "years": "1.5 years" },
         { "img": "./assets/images/java.png", "name": "Java", "years": ".5 years" },
         { "img": "./assets/images/react.png", "name": "React", "years": "1 years" },

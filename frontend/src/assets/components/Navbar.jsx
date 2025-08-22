@@ -2,9 +2,9 @@ export default function Navbar() {
     return (
         <nav>
             <div className="user-info">
-                <p className="name">John Wick</p>
-                <p className="email">test@example.com</p>
-                <p className="phone">123-456-7890</p>
+                <p className="name"><img src="./src/assets/images/home.png" /> John Wick</p>
+                <p className="email"><img src="./src/assets/images/envelope.png" /> test@example.com</p>
+                <p className="phone"><img src="./src/assets/images/phone.png" /> 123-456-7890</p>
             </div>
             <ul>
                 <li><a href="#about">About Me</a></li>

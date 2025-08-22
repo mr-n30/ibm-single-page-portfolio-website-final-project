@@ -12,6 +12,8 @@ export default function Recommendations() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setUsername(e.target.username.value);
+        setTextarea(e.target.recommendation.value);
         setRecommendations((prev) => {
             return [...prev,
             (<article className="recommendation-item">
@@ -20,8 +22,6 @@ export default function Recommendations() {
             </article>)
             ]
         })
-        setUsername('');
-        setTextarea('');
     }
 
     return (
